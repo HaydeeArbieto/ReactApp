@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon.ico">  
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -25,7 +25,7 @@
     -->
     <title>Nina's Salong</title>
   </head>
-  <body>
+  <body id="principal-container">
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
@@ -41,7 +41,7 @@
                   <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html">Hem</a>
-              <a class="navbar-brand" href="prislista.html">Prislista</a>
+              <a class="navbar-brand" href="/prislista">Prislista</a>
               <a class="navbar-brand" href="galleri.html">Galeri</a>
               <a class="navbar-brand" href="kontaktaoss.html">Kontakta oss</a> 
           </div>
@@ -58,11 +58,16 @@
           </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
   </nav>
-  <img src="images/image1.jpg">
-  <p>Välkommen in för en avkopplande stund och unna dig lite egentid!</p>
-  <p>På <strong>Nimas Salong</strong>. Kan vi hjalpa dig med allt som rör ditt hår vara erfarna frisörer lyssnar gärna på dina önskemål och utgår efter ditt behov. 
-    <footer id="footer-ninas-salong">
-      <p id="p-footer-NinasSalong">Copyright Haydee Arbieto 0722 18 99 18</p>
-  </footer> 
   </body>
 </html>
+<style>
+  #principal-container {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('./background.jpg');
+  }
+  footer {
+	  margin:0 auto;
+	  text-align: center;
+  }
+  </style>
