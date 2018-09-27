@@ -128,7 +128,7 @@ const Pricelist = () => {
    )
   }
 
-  let imgUrl = 'images/background2.jpg'
+  let imgUrl = 'images/background.jpg'
   let styles = {
     root: {
       background: 'url('+ imgUrl + ') noRepeat center center fixed',

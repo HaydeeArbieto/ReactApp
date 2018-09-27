@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './index.css';
+import './css/style.css';
 import App from './App';
 
 import { BrowserRouter } from 'react-router-dom'
-
-import registerServiceWorker from './registerServiceWorker';
 
 var destination = document.querySelector("#container")
 
@@ -15,4 +13,5 @@ ReactDOM.render(
         <App />
     </BrowserRouter>
 , document.getElementById('root')
+
 );
