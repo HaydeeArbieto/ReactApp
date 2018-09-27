@@ -24,32 +24,26 @@ class App extends Component {
         <p className="App-intro">
           Here is a app...  </p>
           
-          <Navbar class="navbar navbar-default">
-            <Navbar.Header>
-              <Navbar.Brand>
-                <a href="#">React-Bootstrap</a>
-              </Navbar.Brand>
-            </Navbar.Header>
+        <Navbar class="navbar navbar-default">
           <Nav>
             <NavItem eventKey={Home} href="/">Home</NavItem>
             <NavItem eventKey={Pricelist} href="/pricelist">Prislista</NavItem>
             <NavItem eventKey={Galeri} href="/galeri">Galeri</NavItem>
             <NavItem eventKey={Contact} href="/contact">Kontakta oss</NavItem>
             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-    dropdown">
-              <MenuItem eventKey={3.1}>Action</MenuItem>
+            <MenuItem eventKey={3.1}>Action</MenuItem>
               <MenuItem eventKey={3.2}>Another action</MenuItem>
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
               <MenuItem eventKey={3.4}>Separated link</MenuItem>
             </NavDropdown>
           </Nav>
-      </Navbar>
+        </Navbar>
          
-            <Route exact path="/" component={Home}/>
-            <Route path='/pricelist' component={Pricelist}/>
-            <Route path="/galeri" component={Galeri}/>
-            <Route path='/contact' component={Contact}/>
-        
+        <Route exact path="/" component={Home}/>
+        <Route path='/pricelist' component={Pricelist}/>
+        <Route path="/galeri" component={Galeri}/>
+        <Route path='/contact' component={Contact}/>
       </div>  
     );
   }

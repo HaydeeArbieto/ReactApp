@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 const Pricelist = () => {
   return (
-      <div>
+      <div id="pricelist-container">
           <h2 id="prislista-head">PRISLIST</h2>
           <div class="container">
             <h3>Fransar & Bryn</h3>
@@ -126,6 +126,14 @@ const Pricelist = () => {
           </div>
        </div> 
    )
+  }
+
+  let imgUrl = 'images/background2.jpg'
+  let styles = {
+    root: {
+      background: 'url('+ imgUrl + ') noRepeat center center fixed',
+      backgroundSize: 'cover',
+    }
   }
 
   export default Pricelist;

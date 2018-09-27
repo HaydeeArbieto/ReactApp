@@ -1,5 +1,6 @@
  import React, { Component } from 'react';
- import { Button } from 'react-bootstrap';
+ import { Button,  ImageBackground,  StyleSheet } from 'react-bootstrap';
+ import BackgroundImage from 'react-background-image-loader';
 
  const Home = () => {
     return (
